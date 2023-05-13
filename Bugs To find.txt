@@ -1,0 +1,27 @@
+1- Recon
+2- Javascript
+3- Versions
+4- Scanners
+5- Others easy bugs + default creds
+6- Sensitive data exposure
+7- Broken authentication + Race condition
+8- IDORS + Access control
+9- Logic Bugs
+10- Sql injection /no sql injection / ldap injection
+11- Cmd injection
+12- Csti / SSTI
+13- XSS
+14- csrf + clickjacking + (session fixation for double submit)
+15- File upload 
+16- LFI/RFI / path traversal
+17- Ssrf and open redirect
+18 - XXE / xml based attacks
+19 - Origin ip finding
+20 - 403, 302 bypass
+21 - APi versions, sensitive params , BOLA , IDORS and  others
+22- JWT + seession attacks
+23- CRLF + CORS
+24- S3
+25- Others like BLH
+26- Cache Poisoning
+27 - Request Smuggling
