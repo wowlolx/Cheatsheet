@@ -3,7 +3,7 @@
 3- Versions
 4- Scanners
 5- Others easy bugs + default creds
-6- Sensitive data exposure
+6- Sensitive data exposure/ Misconfigurations
 7- Broken authentication + Race condition
 8- IDORS + Access control
 9- Logic Bugs
@@ -13,7 +13,7 @@
 13- XSS
 14- csrf + clickjacking + (session fixation for double submit)
 15- File upload 
-16- LFI/RFI / path traversal
+16-  LFI / RFI / Directory (Path) Traversal
 17- Ssrf and open redirect
 18 - XXE / xml based attacks
 19 - Origin ip finding
