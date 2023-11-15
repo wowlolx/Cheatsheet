@@ -1,3 +1,4 @@
+1- Recon specific:
 ● Recon
 ● JS + HTML full code review
 ● JS Files analysis (Static / dynamic, functionalities, extracting secrets , parameters)
@@ -5,52 +6,48 @@
 ● DO initial tests (things to look at first)
 ● Scanners (Scanning)
 ● Third party scanning (S3 Buckets, Github)
-● Version detection and vulns (website + webserver + network)
+● Version detection and vulns (website (tech stack, language, versions) + webserver + network)
 ● Vulnerabilities in all tech stack
+● CMS exploitation (Vulns, default creds, misconfigurations , others)
+
 1- Bugs:
-1- Fuzzing every user input field too (Fuzzing server wide issues and other input specifics too)
-1.1- Fuzzing and seeing response length and timing and other changes
-1- Recon ● 
-2- Javascript (+ html code full review) ● 
-2.5- JS analysis (complete) ● 
-3- Walking the application ● 
-3- Versions ● 
-4- Scanners ● 
-4.5- CMS exploitation if CMS
-4.5- Web server/ language/ backend tech stack exploitation
-5- Others easy bugs + default creds + Subdomain takeovers + .git + S3 buckets + login brute force
-6- Sensitive data exposure/ Misconfigurations
-7- Broken authentication  + Default / weak credentials + Rate limit
-7- Race condition on all sensitive functions
-7.5- Fuzzing for all bugs
-8- Access control / IDORS (Multi step processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
-9- Logic Bugs
-9.5- Rate Limiting bugs
-10- Sql injection /no sql injection (Must) / ldap injection (Must try too)
-11- Cmd injection
-12- Csti / SSTI
-13- XSS (Blind + DOM (with DOM invader) + Reflective + Stored+ CSTI)
-13.5- Dom based injections (redirects , Post messages) , Content injection, Dangling markup injection
-14- csrf + clickjacking + (session fixation for double submit) 
-15- File upload 
-16-  LFI / RFI / Directory (Path) Traversal
-16.5- Directory traversal if app using internal routes
-17- Ssrf and open redirect
-17.- Openredirects on redirects
-18 - XXE / xml based attacks
-19 - Origin ip finding
-20 - 403,401, 302 bypass
-21 - APi versions, sensitive params , BOLA , IDORS and  others
-22- JWT + seession attacks
-23- CRLF + CORS
-24- S3
-25- Others like BLH
-26- Cache Poisoning + Cache Deception
-27 - Request Smuggling
-28- Unicode Normalization
-29- CRLF injection
-30- Prototype Pollution (Client side + Server Side)
-29- Whitebox bugs (can test in blackbox too) -> loose comparison, insecure desearialization (code execution, login bypass, Object injection)
-30- Code review
-31- Crypto bugs if custom crypto
-32- Pwn bugs if using low level languages
+●  Fuzzing every user input field too (Fuzzing server wide issues and other input specifics too)
+●  Fuzzing and seeing response length and timing and other changes (For all bugs)
+● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force
+● Sensitive data exposure/ Misconfigurations
+● Broken authentication  + Default / weak credentials + Rate limit
+● Race condition on all sensitive functions
+● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
+● Logic Bugs (Changing Business Logic)
+● Rate Limiting bugs (Leading to disruption of logic)
+● Sql Injection / No Sql Injection / Ldap Injection (Must try too)
+● Cmd Injection
+● SSTI / CSTI (Must - Both)
+● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI) (Separately)
+● Dom Based Injections (Redirects , Post messages) +  Content injection + Dangling markup injection
+● Csrf 
+● Clickjacking + (Session Fixation for double submit) + Session Fixation
+● File Upload 
+● LFI / RFI / Directory (Path) Traversal
+● Directory traversal if app using internal routes
+● SSRF (Open redirect too)
+● Open Redirects on Redirects
+● XXE / Xml Based Attacks (Other xml injection)
+● Origin Ip Finding
+● 403,401, 302 Bypasses
+● APi Versions + Sensitive Parameters + BOLA + IDORS
+● Other Api Bugs
+● JWT + Session Attacks (Try Both)
+● CRLF Injection
+● CORS
+● S3 / Lambda / Other Aws / Cloud misconfigs
+● Others like BLH
+● Cache Poisoning + Cache Deception
+● Request Smuggling
+● Unicode Normalization
+● Prototype Pollution (Client side + Server Side) (Try Both)
+● Web socket vulnerabilities (Try other vulns in sockets data too)
+● Whitebox Bugs (can test in blackbox too) (Loose Comparison / Type Confusion +  Insecure Desearialization (code execution, login bypass, Object injection))
+● Code review + Sast Analysis
+● Crypto bugs if custom crypto
+● Pwn bugs if using low level languages
