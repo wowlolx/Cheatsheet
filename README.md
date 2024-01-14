@@ -37,6 +37,22 @@ I strive to keep this cheatsheet up-to-date, but due to the dynamic nature of cy
 
 Feel free to explore the cheatsheet based on your interests and needs. It caters to a broad audience, including offensive security enthusiasts, defenders looking to bolster their security posture, CTF participants seeking solutions, and individuals eager to learn more about cybersecurity.
 
+1. **Prerequisites:**
+   - Before exploring the cheatsheet, ensure you have [Xmind](https://www.xmind.net/download/) installed on your system.
+   - Minimum Xmind version required: 24.01.09392.
+
+2. **Download and Installation:**
+   - Visit the [Xmind download page](https://www.xmind.net/download/) and download the version that matches or exceeds the minimum requirement.
+   - Follow the installation instructions provided by Xmind for your operating system.
+
+3. **Opening the Cheatsheet:**
+   - Once Xmind is installed, download the cheatsheet Xmind files from this repository.
+   - Open Xmind and import the cheatsheet files.
+   - Navigate through the cheatsheet using the Xmind interface.
+
+By using Xmind, you can take advantage of interactive features and visualizations to enhance your learning experience. Feel free to customize the cheatsheet based on your preferences within the Xmind application.
+
+
 ## Contributing
 
 Your contributions are highly welcome! If you have additional insights, tools, or techniques to share, please open a pull request. I highly appreciate any valuable additions to make this cheatsheet more comprehensive and beneficial for everyone.
