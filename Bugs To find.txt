@@ -20,12 +20,13 @@
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs (Changing Business Logic)
 ● Rate Limiting bugs (Leading to disruption of logic)
-● Sql Injection / No Sql Injection / Ldap Injection (Must try too)
+● Sql Injection / No Sql Injection / Ldap Injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used)
 ● Cmd Injection
 ● SSTI / CSTI (Must - Both)
+● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI) (Separately)
 ● Dom Based Injections (Redirects , Post messages) +  Content injection + Dangling markup injection
-● Csrf 
+● Csrf (State Chaning Requests, can be GET (vulnerable to csrf) / Post/ Others)
 ● Clickjacking + (Session Fixation for double submit) + Session Fixation
 ● File Upload 
 ● LFI / RFI / Directory (Path) Traversal
