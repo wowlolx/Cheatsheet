@@ -41,7 +41,8 @@
 ● JWT + Session Attacks (Try Both)
 ● CRLF Injection
 ● CORS
-● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal)
+● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
+● Mass Assignment
 ● S3 / Lambda / Other Aws / Cloud misconfigs
 ● Others like BLH
 ● Cache Poisoning + Cache Deception
