@@ -51,7 +51,7 @@
 ● Prototype Pollution (Client side + Server Side) (Try Both)
 ● Web socket vulnerabilities (Try other vulns in sockets data too)
 ● Bypassing Regex , WAF and Filters
-● Whitebox Bugs (can test in blackbox too) (Loose Comparison / Type Confusion +  Insecure Desearialization (code execution, login bypass, Object injection))
+● Whitebox Bugs (can test in blackbox too) (Code Injection , Loose Comparison / Type Confusion +  Insecure Desearialization (code execution, login bypass, Object injection))
 ● Code review + Sast Analysis
 ● Crypto bugs if custom crypto
 ● Pwn bugs if using low level languages
