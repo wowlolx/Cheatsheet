@@ -27,7 +27,7 @@ The cheatsheet covers a wide range of topics, including:
 - **Red Teaming Strategies**: Insights into offensive security operations. (Basically incomplete )
 - **Defensive Security**: Guidelines to enhance overall system defense. Involving subsections of malware reversing, Forensics, threat hunting, SOC analyst, Threat Intelligence and others
 - **Capture The Flag (CTF) Solutions**: Solutions and approaches for various CTF challenges. (Everything I learn from ctf, however I just mostly forget to add it to cheetsheet, still trying ..)
-- **Other Topics**: That I had learnt like Binex, Reversing, Crypto and a little touch of hardware, Web3, Game Hacking and IOT (will add others in future too)
+- **Other Topics**: That I had learnt like Binex, Reversing, Crypto and a little touch of hardware, Web3,AD,cloud sec, Game Hacking and IOT (will add others in future too)
 
 ## Updates
 
