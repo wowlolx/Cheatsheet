@@ -14,7 +14,7 @@
 ●  Fuzzing every user input field too (Fuzzing server wide issues and other input specifics too)
 ●  Fuzzing and seeing response length and timing and other changes (For all bugs)
 ● See every small detail , like errors, change in status code , headers, content length or others
-● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force
+● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force (+ with custom wordlists)
 ● Sensitive data exposure/ Misconfigurations
 ● Broken authentication  + Default / weak credentials + Rate limit
 ● Race condition on all sensitive functions
