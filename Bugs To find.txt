@@ -32,7 +32,7 @@
 ● File Upload 
 ● LFI / RFI / Directory (Path) Traversal
 ● Directory traversal if app using internal routes
-● SSRF (Open redirect too)
+● SSRF (Open redirect too) (try for ssrf -> lfi too)
 ● Open Redirects on Redirects
 ● XXE / Xml Based Attacks (Other xml injection)
 ● Origin Ip Finding
