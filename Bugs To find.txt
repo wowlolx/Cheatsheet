@@ -20,7 +20,7 @@
 ● Race condition on all sensitive functions
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs (Changing Business Logic)
-● Rate Limiting bugs (Leading to disruption of logic)
+● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks
 ● Sql Injection / No Sql Injection / Ldap Injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used)
 ● Cmd Injection
 ● SSTI / CSTI (Must - Both)
