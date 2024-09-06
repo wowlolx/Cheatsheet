@@ -21,7 +21,7 @@
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs (Changing Business Logic)
 ● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks
-● Sql Injection / No Sql Injection / Ldap Injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used)
+● Sql Injection / No Sql Injection / Ldap Injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
 ● Cmd Injection
 ● SSTI / CSTI (Must - Both)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
@@ -43,17 +43,18 @@
 ● CRLF Injection (CRLF to request Smuggling)
 ● CORS
 ● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
-● Mass Assignment
+● Mass Assignment (Must try with differnet parameters and different vals for same parameters)
 ● S3 / Lambda / Other Aws / Cloud misconfigs
 ● Others like BLH
 ● Cache Poisoning + Cache Deception
 ● Request Smuggling
 ● Insecure Deserialization
-● Unicode Normalization
-● Prototype Pollution (Client side + Server Side) (Try Both)
+● Unicode Normalization , Unicode Compatibility check /Homoglyph attacks/ Unicode Ligatures
+● Data Parsing Discrepancies (Amond differnet functions, different filters ,different applications and amon WAFs, reverse proxies, CDNs and the server)
 ● Web socket vulnerabilities (Try other vulns in sockets data too)
 ● Bypassing Regex , WAF and Filters
 ● RegDos
+● Prototype Pollution (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
 
 ● Whitebox Bugs:
     ● Code Injection 
