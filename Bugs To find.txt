@@ -43,7 +43,7 @@
 ● CRLF Injection (CRLF to request Smuggling)
 ● CORS
 ● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
-● Mass Assignment (Must try with differnet parameters and different vals for same parameters)
+● Mass Assignment (Must try with differnet parameters and different vals for same parameters, passing different data type (array etc) in parameters)
 ● S3 / Lambda / Other Aws / Cloud misconfigs
 ● Others like BLH
 ● Cache Poisoning + Cache Deception
