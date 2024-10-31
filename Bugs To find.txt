@@ -39,7 +39,7 @@
 ● 403,401, 302 Bypasses
 ● APi Versions + Sensitive Parameters + BOLA + IDORS
 ● Other Api Bugs
-● JWT + Session Attacks (+ Known/default and weak Secrets) (Try Both)
+● JWT + Session Attacks (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
 ● CRLF Injection (CRLF to request Smuggling)
 ● CORS
 ● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
