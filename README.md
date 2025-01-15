@@ -31,7 +31,7 @@ The cheatsheet covers a wide range of topics, including:
 
 ## Updates
 
-I strive to keep this cheatsheet up-to-date, but due to the dynamic nature of cybersecurity, some information may become outdated. I appreciate your understanding and patience. (Currently its about 20-30% complete only :<). I will try to add an obsidian version of it and also a pdf of all sections and subsections in future
+I strive to keep this cheatsheet up-to-date, but due to the dynamic nature of cybersecurity, some information may become outdated. I appreciate your understanding and patience. (Currently its about 15-20% complete only as I am too lazy to add things :<). I will try to add an obsidian version of it and also a pdf of all sections and subsections in future
 
 ## How to Use
 
