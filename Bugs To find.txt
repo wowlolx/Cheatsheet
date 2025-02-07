@@ -51,7 +51,9 @@
 ● Insecure Deserialization
 ● Unicode Normalization , Unicode Compatibility check /Homoglyph attacks/ Unicode Ligatures, UTF-8/16 to ASCII (lower Conversion Errors and Inconsistencies)
 ● Data Parsing Discrepancies (Amond differnet functions, different filters ,different applications and amon WAFs, reverse proxies, CDNs and the server)
+● Data parsing / Config / Other discrepancies between various systems / products / solutions / designs / applications in place and interacting
 ● Web socket vulnerabilities (Try other vulns in sockets data too)
+● Attacks on Randomness of Data / Attributes/ Values / Events
 ● Bypassing Regex , WAF and Filters
 ● RegDos
 ● Prototype Pollution (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
