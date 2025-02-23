@@ -11,8 +11,8 @@
 ● CMS exploitation (Vulns, default creds, misconfigurations , others)
 
 1- Bugs:
-●  Fuzzing every user input field too (Fuzzing server wide issues and other input specifics too)
-●  Fuzzing and seeing response length and timing and other changes (For all bugs)
+●  Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too)
+●  Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
 ● See every small detail , like errors, change in status code , headers, content length or others
 ● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force (+ with custom wordlists)
 ● Sensitive data exposure/ Misconfigurations
@@ -20,7 +20,7 @@
 ● Race condition on all sensitive functions
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs (Changing Business Logic)
-● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks
+● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks (Check Use of simple operations like '|| / &&' instead of bitwise operations and simple string comparisons too)
 ● Sql Injection / No Sql Injection / Ldap Injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
 ● Cmd Injection
 ● SSTI / CSTI (Must - Both)
@@ -57,11 +57,13 @@
 ● Bypassing Regex , WAF and Filters
 ● RegDos
 ● Prototype Pollution (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
+● Confusion Bugs (Multiple Systems, Services handling same input differently - Try binding with other input vulns and edge cases)
 
 ● Whitebox Bugs:
     ● Code Injection 
     ● Loose Comparison / Type Confusion / Type Juggling (can send data as strings , arrays in web) 
     ● Insecure Desearialization (code execution, login bypass, Object injection)
+    ● Changed Data types: (Null, Primitive, non primitive data types, available objects and Others)
 ● Manual and Automated Code review + Sast Analysis
 ● Crypto bugs if custom crypto
 ● Pwn bugs if using low level languages
