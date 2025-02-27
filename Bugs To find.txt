@@ -58,12 +58,15 @@
 ● RegDos
 ● Prototype Pollution (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
 ● Confusion Bugs (Multiple Systems, Services handling same input differently - Try binding with other input vulns and edge cases)
+● Language , Architecture , Other technologies specific bugs
 
 ● Whitebox Bugs:
     ● Code Injection 
     ● Loose Comparison / Type Confusion / Type Juggling (can send data as strings , arrays in web) 
     ● Insecure Desearialization (code execution, login bypass, Object injection)
+    ● Prototype pollution (Also see if we can access Class Properties in OOP languages)
     ● Changed Data types: (Null, Primitive, non primitive data types, available objects and Others)
+    ● Unintended use of functions and code (See Documentation and exploitation examples) 
 ● Manual and Automated Code review + Sast Analysis
 ● Crypto bugs if custom crypto
 ● Pwn bugs if using low level languages
