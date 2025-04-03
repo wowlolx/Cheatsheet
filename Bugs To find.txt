@@ -25,7 +25,7 @@
 ● Cmd Injection
 ● SSTI / CSTI (Must - Both)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
-● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering) (Separately)
+● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering) (Separately) + Cookie Tossing (Mainly in Self XSS)
 ● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
 ● Csrf (State Changing Requests, can be GET (vulnerable to csrf) / Post/ Others)
 ● Clickjacking + (Session Fixation for double submit) + Session Fixation
