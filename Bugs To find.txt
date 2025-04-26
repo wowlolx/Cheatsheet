@@ -22,7 +22,7 @@
 ● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
 ● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks (Check Use of simple operations like '|| / &&' instead of bitwise operations and simple string comparisons too)
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
-● Cmd Injection
+● Cmd Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
 ● SSTI / CSTI (Must - Both)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering) (Separately) + Cookie Tossing (Mainly in Self XSS)
