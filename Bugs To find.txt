@@ -45,7 +45,7 @@
 ● JWT + Session Attacks (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
 ● CRLF Injection (CRLF to request Smuggling)
 ● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
-● Mass Assignment (Must try with differnet parameters and different vals for same parameters, passing different data type (array etc) in parameters)
+● Mass Assignment (Must try with differnet parameters and different vals for same parameters, passing different data type (array etc) in parameters and with different content types)
 ● S3 / Lambda / Other Aws / Cloud misconfigs
 ● Others like BrokenLinkHijacking
 ● Cache Poisoning + Cache Deception
@@ -53,7 +53,7 @@
 ● Host Header Vulns
 ● Insecure Deserialization
 ● Unicode Normalization , Unicode Compatibility check /Homoglyph attacks/ Unicode Ligatures, UTF-8/16 to ASCII (lower Conversion Errors and Inconsistencies)
-● Data Parsing Discrepancies (Amond differnet functions, different filters ,different applications and amon WAFs, reverse proxies, CDNs and the server)
+● Data Parsing Discrepancies (Among differnet functions, different filters ,different applications and amon WAFs, reverse proxies, CDNs and the server)
 ● Data parsing / Config / Other discrepancies between various systems / products / solutions / designs / applications in place and interacting
 ● Websocket vulnerabilities (Try other vulns in sockets data too)
 ● Attacks on Randomness of Data / Attributes/ Values / Events
@@ -70,7 +70,7 @@
     ● Loose Comparison / Type Confusion / Type Juggling (can send data as strings , arrays in web) 
     ● Insecure Desearialization (code execution, login bypass, Object injection)
     ● Prototype pollution (Also see if we can access Class Properties in OOP languages)
-    ● Changed Data types: (Null, Primitive, non primitive data types, available objects and Others)
+    ● Changed Data types and content types: (Null, Primitive, non primitive data types, available objects and Others)
     ● Unintended use of functions and code (See Documentation and exploitation examples) 
 ● Manual and Automated Code review + Sast Analysis
 ● Crypto bugs if custom crypto
