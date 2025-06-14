@@ -62,6 +62,15 @@
 ● Again fuzzing/spidering/others techniques to find more pages (with extensions too , For polyglots too)
 ● Finding and Separating all parameters and Fuzzing all parameters
 
+● Clickjacking (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
+● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
+● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
+● CSPT (Client Side Path traversal)
+● Csrf (State Changing Requests, can be GET (vulnerable to csrf) / Post/ Others)
+● Open Redirects on Redirects
+● CORS Vulns
+● Reverse TabNapping
+
 ● Race condition on all sensitive functions + Timing attacks
 
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
@@ -96,15 +105,6 @@
 ● Websocket vulnerabilities (Try other vulns in sockets data too)
 ● Prototype Pollution + PostMessage Vulns (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
 ● Server Side XSS (Must in files too)
-
-● Clickjacking (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
-● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
-● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
-● CSPT (Client Side Path traversal)
-● Csrf (State Changing Requests, can be GET (vulnerable to csrf) / Post/ Others)
-● Open Redirects on Redirects
-● CORS Vulns
-● Reverse TabNapping
 
 ● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls /REST /SOAP
 ● Other Api Bugs
