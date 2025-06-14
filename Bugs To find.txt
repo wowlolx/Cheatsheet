@@ -4,68 +4,105 @@
 ● JS Files analysis (Static / dynamic, functionalities, extracting secrets , parameters)
 ● Map entry points (Access all functionalities/ Increase Access)
 ● DO initial tests (things to look at first)
-● Scanners (Scanning)
+● Scanners (Scanning + Automated Scanners)
 ● Third party scanning (S3 Buckets, Github)
 ● Version detection and vulns (website (tech stack, language, versions) + webserver + network)
 ● Vulnerabilities in all tech stack
 ● CMS exploitation (Vulns, default creds, misconfigurations , others)
 
 1- Bugs:
-●  Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too)
-●  Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
-● See every small detail , like errors, change in status code , headers, content length or others
+
+## Common Easy Ones Testing:
 ● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force (+ with custom wordlists)
 ● Sensitive data exposure/ Misconfigurations + Information Disclosure Bugs
+
+## Site Wide Testing (Some bugs can be here and in specific areas too so written there):
+● Language , Architecture , Frameworks , Libraries , Middlewares, Design , Integrations and  Other technologies specific bugs (Must Map all)
+● Origin Ip Finding
+● 403,401, 302 Bypasses
+● Others like BrokenLinkHijacking
+
+
+## Authentication Testing:
 ● Broken authentication  + Default / weak credentials + Rate limit
+● oAuth Vulnerabilities
+
+## Cookies, Session ID, UUIDs Testing (Map all areas where these are allocated , path specific allocations too and scope too):
+● JWT + Session Attacks (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
+● Attacks on Randomness of Data / Attributes/ Values / Events
+● Cookie Attacks, Crypto Bugs , Insecure Deserialization
+
+## Proxy Specific Testing
+● Cache Poisoning + Cache Deception
+● Request Smuggling
+● Host Header Vulns
+● Hop By Hop Headers
+● H2C Smuggling + Websocket Smuggling + Desync Attacks
+● Look for specific channels vulns i.e Server/Edge Side Inclusion , gRPC (Over web, HTTP/2) , WebSockets , SSE(server side events) ,WebRTC, Cloud Messaging (like firebase) , Web Torrents , Web Transport, HTTP2 Streaming ,Backgroup Sync/Push API, Service Workers and Others (WebNFC/USB/Bluetooth , MQTT, Coap,XMPP)
+● Bypassing Regex , WAF and Filters
+
+
+## Access Control Testing:
 ● Race condition on all sensitive functions
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
-● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks (Check Use of simple operations like '|| / &&' instead of bitwise operations and simple string comparisons too)
+
+
+## Endpoint/Input/Data Specific Testing
+● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too)
+● Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
+● See every small detail , like errors, change in status code , headers, content length or others. Also see how normal functions works and how site behaves
+● Again fuzzing pages with extensions (For polyglots too)
+● Separating all parameters and Fuzzing all parameters
+
+● Race condition on all sensitive functions + Timing attacks
+
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection (Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
+● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
 ● Cmd Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
 ● SSTI / CSTI (Must - Both)
-● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
-● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering) (Separately) + Cookie Tossing (Mainly in Self XSS)
-● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
-● CSPT (Client Side Path traversal)
-● Csrf (State Changing Requests, can be GET (vulnerable to csrf) / Post/ Others)
-● Clickjacking + (Session Fixation for double submit) + Session Fixation
-● CORS Vulns
+● CRLF Injection (CRLF to request Smuggling)
+
+● SSRF (Open redirect too) (try for ssrf -> lfi too)
+
+● XXE / Xml Based Attacks (Other xml injection)
+● XSLT- Server Side Inclusion
+
+● Rate Limiting bugs (Leading to disruption of logic) + Timing attacks (Check Use of simple operations like '|| / &&' instead of bitwise operations and simple string comparisons too)
+● S3 / Lambda / Other Aws / Cloud misconfigs
+
+● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
+● Mass Assignment (Must try with differnet parameters and different vals for same parameters, passing different data type (array etc) in parameters and with different content types)
+
 ● File Upload 
 ● LFI / RFI  + Directory (Path) Traversal
 ● Directory traversal if app using internal routes
 ● Arbitrary File Write
-● SSRF (Open redirect too) (try for ssrf -> lfi too)
-● Open Redirects on Redirects
-● XXE / Xml Based Attacks (Other xml injection)
-● Origin Ip Finding
-● 403,401, 302 Bypasses
-● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls /REST /SOAP
-● Other Api Bugs
-● JWT + Session Attacks (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
-● CRLF Injection (CRLF to request Smuggling)
-● Parameter Pollution (Trying with Post/Get/Json/Xml and Double parameters for stuff like $_REQUEST superglobal, Must try with different backends)
-● Mass Assignment (Must try with differnet parameters and different vals for same parameters, passing different data type (array etc) in parameters and with different content types)
-● S3 / Lambda / Other Aws / Cloud misconfigs
-● Others like BrokenLinkHijacking
-● Cache Poisoning + Cache Deception
-● Request Smuggling
-● Host Header Vulns
+
 ● Insecure Deserialization
 ● Unicode Normalization , Unicode Compatibility check /Homoglyph attacks/ Unicode Ligatures, UTF-8/16 to ASCII (lower Conversion Errors and Inconsistencies)
 ● Data Parsing Discrepancies (Among differnet functions, different filters ,different applications and amon WAFs, reverse proxies, CDNs and the server)
 ● Data parsing / Config / Other discrepancies between various systems / products / solutions / designs / applications in place and interacting
-● Websocket vulnerabilities (Try other vulns in sockets data too)
-● Attacks on Randomness of Data / Attributes/ Values / Events
-● Bypassing Regex , WAF and Filters
-● RegDos
-● oAuth Vulnerabilities
-● Prototype Pollution + PostMessage Vulns (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
 ● Confusion Bugs (Multiple Systems, Services handling same input differently - Try binding with other input vulns and edge cases)
-● Language , Architecture , Frameworks , Other technologies specific bugs (Must Map all)
+● RegDos
+
+● Websocket vulnerabilities (Try other vulns in sockets data too)
+● Prototype Pollution + PostMessage Vulns (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
+
+● Clickjacking (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
+● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering) (Separately) + Cookie Tossing (Mainly in Self XSS)
+● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
+● CSPT (Client Side Path traversal)
+● Csrf (State Changing Requests, can be GET (vulnerable to csrf) / Post/ Others)
+● Open Redirects on Redirects
+● CORS Vulns
+
+● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls /REST /SOAP
+● Other Api Bugs
+
 ● Web LLMs
 
-● Whitebox Bugs:
+## Whitebox Bugs (Blind try on blackbox too):
     ● Code Injection 
     ● Loose Comparison / Type Confusion / Type Juggling (can send data as strings , arrays in web) 
     ● Insecure Desearialization (code execution, login bypass, Object injection)
