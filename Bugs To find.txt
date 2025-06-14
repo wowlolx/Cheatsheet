@@ -16,6 +16,7 @@
 ● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force (+ with custom wordlists)
 ● Sensitive data exposure/ Misconfigurations + Information Disclosure Bugs
 
+
 ## Site Wide Testing (Some bugs can be here and in specific areas too so written there):
 ● Language , Architecture , Frameworks , Libraries , Middlewares, Design , Integrations and  Other technologies specific bugs (Must Map all)
 ● Origin Ip Finding
@@ -30,10 +31,12 @@
 ● Captcha , Login , Payment Process , Reset, Change, Register proceses
 ● Check for Breached Creds , Stealer Logs , IABS and Others (Threat Intel too)
 
+
 ## Cookies, Session ID, UUIDs Testing (Map all areas where these are allocated , path specific allocations too and scope too):
 ● JWT + Session Attacks + UUID vulns and versions (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
 ● Attacks on Randomness of Data / Attributes/ Values / Events
 ● Cookie Attacks, Crypto Bugs , Insecure Deserialization
+
 
 ## Proxy Specific Testing
 ● Cache Poisoning + Cache Deception
@@ -50,6 +53,7 @@
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
 ● See parameter pollution and mass assignment too
+
 
 ## Endpoint/Input/Data Specific Testing
 ● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too)
@@ -106,6 +110,7 @@
 ● Other Api Bugs
 
 ● Web LLMs
+● Mobile Application + Desktop applications specific bugs
 
 ## Whitebox Bugs (Blind try on blackbox too):
     ● Code Injection 
@@ -117,3 +122,5 @@
 ● Manual and Automated Code review + Sast Analysis
 ● Crypto bugs if custom crypto
 ● Pwn bugs if using low level languages
+
+● Finding bugs in used frameworks , libraries, function , languages, others (specifically in really old ones)
