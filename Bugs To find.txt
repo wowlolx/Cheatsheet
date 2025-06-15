@@ -60,7 +60,7 @@
 ● Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
 ● See every small detail , like errors, change in status code , headers, content length or others. Also see how normal functions works and how site behaves
 ● Again fuzzing/spidering/others techniques to find more pages (with extensions too , For polyglots too)
-● Finding and Separating all parameters and Fuzzing all parameters
+● Finding and Separating all parameters and Fuzzing all parameters. Can also setup basic match and replace/auto modify rules for testing user-agents, headers and other parts (Requests and responses) as well
 
 ● Clickjacking (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
@@ -73,9 +73,10 @@
 
 ● Race condition on all sensitive functions + Timing attacks
 
+● Test for all blind and second order injections and vulnerabilities too
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
-● Cmd Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
+● Cmd Injection, Code Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
 ● SSTI  +  CSTI (Must - Both)
 ● CRLF Injection (CRLF to request Smuggling)
 
@@ -106,7 +107,7 @@
 ● Prototype Pollution + PostMessage Vulns (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
 ● Server Side XSS (Must in files too)
 
-● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls /REST /SOAP
+● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls (introspection, JS for finding queries)/REST /SOAP
 ● Other Api Bugs
 
 ● Web LLMs
