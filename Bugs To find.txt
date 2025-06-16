@@ -62,7 +62,7 @@
 ● Again fuzzing/spidering/others techniques to find more pages (with extensions too , For polyglots too)
 ● Finding and Separating all parameters and Fuzzing all parameters. Can also setup basic match and replace/auto modify rules for testing user-agents, headers and other parts (Requests and responses) as well
 
-● Clickjacking (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
+● Clickjacking + ClipJacking (Search for sensitive data and functions) (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
 ● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
 ● CSPT (Client Side Path traversal)
