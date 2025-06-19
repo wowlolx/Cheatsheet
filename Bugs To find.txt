@@ -113,7 +113,11 @@
 ● Web LLMs
 ● Mobile Application + Desktop applications specific bugs
 
+
 ## Whitebox Bugs (Blind try on blackbox too):
+    ● WhiteBox Scanners
+    ● Code Review
+## WhiteBox Vulns:
     ● Code Injection 
     ● Loose Comparison / Type Confusion / Type Juggling (can send data as strings , arrays in web) 
     ● Insecure Desearialization (code execution, login bypass, Object injection)
