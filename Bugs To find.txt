@@ -56,7 +56,7 @@
 
 
 ## Endpoint/Input/Data Specific Testing
-● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too)
+● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too). Also fuzz headers , input values ,params for issues exists in certain input combinations
 ● Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
 ● See every small detail , like errors, change in status code , headers, content length or others. Also see how normal functions works and how site behaves
 ● Again fuzzing/spidering/others techniques to find more pages (with extensions too , For polyglots too)
