@@ -74,7 +74,7 @@
 ● Race condition on all sensitive functions + Timing attacks
 
 ● Test for all blind and second order injections and vulnerabilities too
-● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
+● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Timing ones , Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
 ● Cmd Injection, Code Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
 ● SSTI  +  CSTI (Must - Both)
