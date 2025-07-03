@@ -48,19 +48,21 @@
 ● Bypassing Regex , WAF and Filters
 
 
-## Access Control Testing:
+## Access Control Testing and Logic Bugs too (Also test logic bugs again after mapping workflows and everything):
 ● Race condition on all sensitive functions
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
-● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
-● See parameter pollution and mass assignment too
+● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, string/number confusion , skipping steps , changing business login and steps sequence  , Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
+● See parameter pollution and mass assig
+nment too
 
 
-## Endpoint/Input/Data Specific Testing
-● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs and other input specifics too). Also fuzz headers , input values ,params for issues exists in certain input combinations
-● Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
-● See every small detail , like errors, change in status code , headers, content length or others. Also see how normal functions works and how site behaves
+## Endpoint/Input/Data Specific Testing:
 ● Again fuzzing/spidering/others techniques to find more pages (with extensions too , For polyglots too)
 ● Finding and Separating all parameters and Fuzzing all parameters. Can also setup basic match and replace/auto modify rules for testing user-agents, headers and other parts (Requests and responses) as well
+● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs, Bad characters and other input specifics too). Also fuzz headers , input values ,params for issues exists in certain input combinations
+● Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
+● Intelligent Fuzzing all input areas (According to thinking how backend implemented code, Bad Characters, Edge cases, Specific Input Combinations)
+● See every small detail , like errors, change in status code , headers, content length or others. Also see how normal functions works and how site behaves
 
 ● Clickjacking + ClipJacking (Search for sensitive data and functions) (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
