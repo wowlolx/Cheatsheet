@@ -51,7 +51,7 @@
 ## Access Control Testing and Logic Bugs too (Also test logic bugs again after mapping workflows and everything):
 ● Race condition on all sensitive functions
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
-● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, string/number confusion , skipping steps , changing business login and steps sequence  , Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
+● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, string/number/value data type confusion , skipping steps , changing business login and steps sequence  , Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
 ● See parameter pollution and mass assig
 nment too
 
@@ -60,9 +60,10 @@ nment too
 ● Again fuzzing/spidering/others techniques to find more pages (with extensions too , For polyglots too)
 ● Finding and Separating all parameters and Fuzzing all parameters. Can also setup basic match and replace/auto modify rules for testing user-agents, headers and other parts (Requests and responses) as well
 ● Fuzzing every user input field too (Fuzzing server wide issues , Edge Cases inputs, Bad characters and other input specifics too). Also fuzz headers , input values ,params for issues exists in certain input combinations
-● Fuzzing and seeing response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
+● Fuzzing and seeing response , response length and timing and other changes (For all bugs , headers , paths , files/dirs and everything else)
 ● Intelligent Fuzzing all input areas (According to thinking how backend implemented code, Bad Characters, Edge cases, Specific Input Combinations)
 ● See every small detail , like errors, change in status code , headers, content length or others. Also see how normal functions works and how site behaves
+● Test for different HTTP methods and Content type conversions and see where they can apply
 
 ● Clickjacking + ClipJacking (Search for sensitive data and functions) (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
@@ -75,7 +76,7 @@ nment too
 
 ● Race condition on all sensitive functions + Timing attacks
 
-● Test for all blind and second order injections and vulnerabilities too
+● Test for all blind , timing based and second order injections and vulnerabilities too
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Timing ones , Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
 ● Cmd Injection, Code Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
@@ -125,7 +126,7 @@ nment too
     ● Insecure Desearialization (code execution, login bypass, Object injection)
     ● Prototype pollution (Also see if we can access Class Properties in OOP languages)
     ● Changed Data types and content types: (Null, Primitive, non primitive data types, available objects and Others)
-    ● Unintended use of functions and code (See Documentation and exploitation examples) 
+    ● Insecure & Unintended use of functions and code (See Documentation and exploitation examples) 
 ● Manual and Automated Code review + Sast Analysis
 ● Crypto bugs if custom crypto
 ● Pwn bugs if using low level languages
