@@ -52,8 +52,7 @@
 ● Race condition on all sensitive functions
 ● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, string/number/value data type confusion , skipping steps , changing business login and steps sequence  , Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
-● See parameter pollution and mass assig
-nment too
+● See parameter pollution and mass assignment too
 
 
 ## Endpoint/Input/Data Specific Testing:
