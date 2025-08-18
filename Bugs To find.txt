@@ -35,7 +35,7 @@
 ## Cookies, Session ID, UUIDs Testing (Map all areas where these are allocated , path specific allocations too and scope too):
 ● JWT + Session Attacks + UUID vulns and versions (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
 ● Attacks on Randomness of Data / Attributes/ Values / Events
-● Cookie Attacks, Crypto Bugs , Insecure Deserialization
+● Cookie Attacks, Crypto Bugs (bit flipping, length extension , others) , Insecure Deserialization
 
 
 ## Proxy Specific Testing
