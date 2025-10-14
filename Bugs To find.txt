@@ -38,7 +38,7 @@
 ● Cookie Attacks, Crypto Bugs (bit flipping, length extension , others) , Insecure Deserialization
 
 
-## Proxy Specific Testing
+## Proxy Specific Testing (Test for whole server , Different Request Methods , Different API Endpoints/Endpoints where server/backend might change)
 ● Cache Poisoning + Cache Deception
 ● Request Smuggling
 ● Host Header Vulns (Check for emails too)
