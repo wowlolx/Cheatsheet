@@ -10,6 +10,7 @@
 ● Vulnerabilities in all tech stack
 ● CMS exploitation (Vulns, default creds, misconfigurations , others)
 
+
 1- Bugs:
 
 ## Common Easy Ones Testing:
