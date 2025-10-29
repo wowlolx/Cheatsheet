@@ -130,8 +130,4 @@
 ● Manual and Automated Code review + Sast Analysis
 ● Crypto bugs if custom crypto
 ● Pwn bugs if using low level languages
-
-PWOKT2u2LGeg[ECtO08{L{GrY{G1Y2PvY0@yPF4seD8tgP
-
-1 se xor karna
 ● Finding bugs in used frameworks , libraries, function , languages, others (specifically in really old ones)
