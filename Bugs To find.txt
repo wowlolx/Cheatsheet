@@ -1,3 +1,19 @@
+Guides to use as well: 
+    - Bug Bounty guides
+    - My Own XMIND Guide
+    - OWASP WSTG
+    - Guides for Vulns like:
+            - Hacktricks Cheatsheets 
+            - Portswigger Testing Methodology and Guides
+            - Intigriti Guides (X.com)
+            - YesWehack Guides
+            - HTB CWEE , EWPTX (Others too)
+            - Critical Thinking
+            - Writeups (CTF + BugBounty)
+    - Testing for Novel Vulns (See Latest Research)
+    - Testing for dependencies as well
+    - Add to recon (Xmind) - Jason Haddix
+
 1- Recon specific:
 ● Recon
 ● JS + HTML full code review
@@ -11,7 +27,7 @@
 ● CMS exploitation (Vulns, default creds, misconfigurations , others)
 
 
-1- Bugs:
+1- Bugs (2-3 Cycles):
 
 ## Common Easy Ones Testing:
 ● Others easy bugs + Default Creds + Subdomain Takeovers + .git files + S3 buckets + Login brute force (+ with custom wordlists)
@@ -33,7 +49,7 @@
 ● Check for Breached Creds , Stealer Logs , IABS and Others (Threat Intel too)
 
 
-## Cookies, Session ID, UUIDs Testing (Map all areas where these are allocated , path specific allocations too and scope too):
+## Session Management , Cookies, Session ID, UUIDs Testing (Map all areas where these are allocated , path specific allocations too and scope too):
 ● JWT + Session Attacks + UUID vulns and versions (+ none/Known/default/no verification and weak Secrets + JKU attacks, algo confusion) (Try Both and Fuzz all cookies too)
 ● Attacks on Randomness of Data / Attributes/ Values / Events
 ● Cookie Attacks, Crypto Bugs (bit flipping, length extension , others) , Insecure Deserialization
@@ -79,9 +95,10 @@
 ● Test for all blind , timing based and second order injections and vulnerabilities too
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Timing ones , Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
 ● Second Order Injection (all injections / vulns) ,In pages where data is retrieved, reflected , used
-● Cmd Injection, Code Injection , Other uncommon injections/technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
+● Cmd Injection, Code Injection , Other uncommon injections and technology specific (like RSQL injecion ,cypher injection (neo4j) , markdown language specific injections ...etc)
 ● SSTI  +  CSTI (Must - Both)
 ● CRLF Injection (CRLF to request Smuggling)
+● IMAP , SMTP Injections and Other Infrastructure and deployed Technologies specific injections
 
 ● SSRF (Open redirect too) (try for ssrf -> lfi too)
 
@@ -102,7 +119,7 @@
 ● Insecure Deserialization
 ● Unicode Normalization , Unicode Compatibility check /Homoglyph attacks/ Unicode Ligatures, UTF-8/16 to ASCII (lower Conversion Errors and Inconsistencies)
 ● Data Parsing Discrepancies (Among differnet functions, different filters ,different applications and amon WAFs, reverse proxies, CDNs and the server)
-● Data parsing / Config / Other discrepancies between various systems / products / solutions / designs / applications in place and interacting
+● Data parsing / Config / Other discrepancies between various systems / products / solutions / designs / applications in place and interacting, Syntax confuson bugs
 ● Confusion Bugs (Multiple Systems, Services handling same input differently - Try binding with other input vulns and edge cases) + Check for Dependency confusion too
 ● RegDos
 
@@ -113,9 +130,11 @@
 ● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls (introspection, JS for finding queries)/REST /SOAP
 ● Other Api Bugs
 
-● Web LLMs
+● Web LLMs Attacks & Injections, Agentic AI Attacks , AI/ML Ops Testing and Attacks
 ● Mobile Application + Desktop applications specific bugs
-
+● CI / CD Testing (Including Infra and deployments like Docker , Kubernetes , Sharepoint , Snowflake etc)
+● Cloud Applications , Infra and Microservices Testing, IAS (infra as service) , Serverless/ FAAS (function as a service) Testing
+● Third party applications , integrations , processes , libraries , dependencies Testing. Also test for Supply Chain Bugs 
 
 ## Whitebox Bugs (Blind try on blackbox too):
     ● WhiteBox Scanners
