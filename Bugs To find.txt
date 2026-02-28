@@ -8,7 +8,7 @@ Guides to use as well:
             - Intigriti Guides (X.com)
             - YesWehack Guides
             - HTB CWEE , EWPTX (Others too)
-            - Critical Thinking
+            - Critical Thinking bb podcast
             - Writeups (CTF + BugBounty)
     - Testing for Novel Vulns (See Latest Research)
     - Testing for dependencies as well
@@ -67,7 +67,7 @@ Guides to use as well:
 
 ## Access Control Testing and Logic Bugs too (Also test logic bugs again after mapping workflows and everything):
 ● Race condition on all sensitive functions
-● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level , Function Level , Logic Bugs)(Must see seperately for all cases)
+● Access Control/IDORs (Multi Step Processes , Privilege Escalation - Horizontal / Vertical, Broken Object level -IDOR , Parameter Level or URL Path Level , Function Level , Logic Bugs)(Must see seperately for all cases)
 ● Logic Bugs / Business Logic bugs (Order and Sequence of Operations & requests, string/number/value data type confusion , skipping steps , changing business login and steps sequence  , Timing Attacks (Parallel Requests for faster exfil), Previous Vulns , Dev/Configuration mistakes)
 ● See parameter pollution and mass assignment too
 
@@ -83,7 +83,7 @@ Guides to use as well:
 
 ● Clickjacking + ClipJacking (Search for sensitive data and functions) (Combining with DOM/Self Xss too) + (Session Fixation for double submit) + Session Fixation
 ● XSS (Blind + DOM (with DOM invader) + Reflective + Stored + CSTI + XS-Leaks + CSS Injection + Dom Clobbering + XSSI (Cross Site Inclusion)) (Separately) + Cookie Tossing (Mainly in Self XSS)
-● Dom Based Vulnerabilities & Injections (Redirects , Post messages) +  Content injection + Dangling markup injection + Dom Clobbering
+● Dom Based Vulnerabilities & Injections (Redirects , postMessage vulnerabilities) +  Content injection + Dangling markup injection + Dom Clobbering
 ● CSPT (Client Side Path traversal)
 ● Csrf (State Changing Requests, can be GET (vulnerable to csrf) / Post/ Others)
 ● Open Redirects on Redirects
@@ -100,7 +100,7 @@ Guides to use as well:
 ● CRLF Injection (CRLF to request Smuggling)
 ● IMAP , SMTP Injections and Other Infrastructure and deployed Technologies specific injections
 
-● SSRF (Open redirect too) (try for ssrf -> lfi too)
+● SSRF (Open redirect too) (try for ssrf -> lfi too), Try for BLinds and Second Order SSRFs too.
 
 ● XXE / Xml Based Attacks (Other xml injection)
 ● XSLT- Server Side Inclusion
@@ -112,7 +112,7 @@ Guides to use as well:
 ● Mass Assignment (Must try with differnet parameters and different vals for same parameters, passing different data type (array etc) in parameters and with different content types)
 
 ● File Upload 
-● LFI / RFI  + Directory (Path) Traversal
+● LFI / RFI  + Directory (Path) Traversal (Second order lfis too)
 ● Directory traversal if app using internal routes
 ● Arbitrary File Write
 
@@ -127,7 +127,7 @@ Guides to use as well:
 ● Prototype Pollution + PostMessage Vulns (Client side + Server Side , when accessing/changing prototype / object hierarchy) (Must see in whitebox too)
 ● Server Side XSS (Must in files too)
 
-● APi Versions + Sensitive Parameters + BOLA + IDORS + Graphqls (introspection, JS for finding queries)/REST /SOAP
+● APi Versions + Sensitive Parameters/URL Paths + BOLA + IDORS + Graphqls (introspection, JS for finding queries)/REST /SOAP
 ● Other Api Bugs
 
 ● Web LLMs Attacks & Injections, Agentic AI Attacks , AI/ML Ops Testing and Attacks
