@@ -90,7 +90,8 @@ Guides to use as well:
 ● CORS Vulns
 ● Reverse TabNapping
 
-● Race condition on all sensitive functions + Timing attacks
+● Race condition on all sensitive functions + Timing attacks + Race Conditions on Concurreny States (All concurrency states, DB concurrency states like Dirty Read, Phantom read, Unresponsive Read , LostUpdate, Incorrect Summary) (Need to find all states first)
+
 
 ● Test for all blind , timing based and second order injections and vulnerabilities too
 ● Sql Injection , No Sql Injection , Ldap Injection, XPATH injection , ORM injection(Timing ones , Try for Second Order Injection Too , In pages where data is retrieved, shown , used , deleted)
@@ -99,6 +100,7 @@ Guides to use as well:
 ● SSTI  +  CSTI (Must - Both)
 ● CRLF Injection (CRLF to request Smuggling)
 ● IMAP , SMTP Injections and Other Infrastructure and deployed Technologies specific injections
+● Object Injections with different Datatypes
 
 ● SSRF (Open redirect too) (try for ssrf -> lfi too), Try for BLinds and Second Order SSRFs too.
 
